@@ -1,0 +1,10 @@
+--Criando um virtual env 
+virtualenv OmopEnvETL
+-- Ativando o ambiente 
+source OmopEnvETL/bin/activate
+
+-- Adicionando o ambiente ao Kernel do Jupyter  obs: dentro do ambiente
+pip install ipykernel
+python -m ipykernel install --user --name=OmopEnvETL
+
+
