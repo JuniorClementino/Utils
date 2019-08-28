@@ -1,0 +1,8 @@
+,concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason
+0,2000014425,Demencia na doenca de Parkinson,Condition,InCor,Condition,,DIAG/C/F02.3,1970-01-01,2099-01-01,
+1,2000014424,Demencia na doenca de Creutzfeldt-Jakob,Condition,InCor,Condition,,DIAG/C/F02.1,1970-01-01,2099-01-01,
+2,2000016420,Demencia em outras doencas classificadas em outra parte,Condition,InCor,Condition,,DIAG/C/F02,1970-01-01,2099-01-01,
+3,2000012201,Demencia na doenca de Huntington,Condition,InCor,Condition,,DIAG/C/F02.2,1970-01-01,2099-01-01,
+4,2000010106,Demencia em outras doencas especificadas classificadas em outra parte,Condition,InCor,Condition,,DIAG/C/F02.8,1970-01-01,2099-01-01,
+5,2000023041,Demencia na doenca do virus da imunodeficiencia humana [HIV],Condition,InCor,Condition,,DIAG/C/F02.4,1970-01-01,2099-01-01,
+6,2000020896,Demencia da doenca de Pick,Condition,InCor,Condition,,DIAG/C/F02.0,1970-01-01,2099-01-01,
