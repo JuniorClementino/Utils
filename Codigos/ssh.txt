@@ -1,1 +1,14 @@
+ #comando para copiar os arquivos do servidor
  scp -r jrclementino@lbdi.icmc.usp.br:/srv/lbdi/dataset-InCor-CDM/  .
+
+
+
+Os dois comandos a seguir é necessários logar no postgres: Mas não no "psql"
+Ex inicio terminal: postgres@junior-clementino:/home/junior$
+
+#Comando para fazer o backup
+pg_dump -Fc -h 127.0.0.1 -U postgres -d gbdi_db -f /tmp/namefile.extensao    #Backup
+
+
+#Comando para fazer o restore. atualizar o banco 
+pg_dump -d gbdi_db -h 127.0.0.1 -U postgres < /tmp/incor_cdm5-vocabs-20190530.pgdump
