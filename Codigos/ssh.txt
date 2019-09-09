@@ -12,3 +12,21 @@ pg_dump -Fc -h 127.0.0.1 -U postgres -d gbdi_db -f /tmp/namefile.extensao    #Ba
 
 #Comando para fazer o restore. atualizar o banco 
 pg_restore -d nova -h 127.0.0.1 -U postgres /tmp/incor_cdm5-vocabs-20190705.pgdump
+
+
+
+
+pg_restore --verbose --clean --no-acl --no-owner -d gbdi_db  -h 127.0.0.1 -U postgres  /tmp/incor_cdm5-vocabs-20190705.pgdump
+
+
+pg_restore -c -d nova -h 127.0.0.1 -U postgres /tmp/incor_cdm5-vocabs-20190705.pgdump 
+
+
+
+pg_restore --clean -d gbdi_db  -h 127.0.0.1 -U postgres  /tmp/incor_cdm5-vocabs-20190705.pgdump
+
+
+
+On Unix or Mac:
+
+sed 's/oldstring/newstring/g' oldfile.txt > newfile.txt
