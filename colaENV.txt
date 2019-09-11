@@ -7,4 +7,6 @@ source OmopEnvETL/bin/activate
 pip install ipykernel
 python -m ipykernel install --user --name=OmopEnvETL
 
+-- versao especifica python 
 
+virtualenv --python=/usr/bin/python3 nome_pasta/nome_ambiente
