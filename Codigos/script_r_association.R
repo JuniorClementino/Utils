@@ -2,7 +2,7 @@
 library(arules)
 
 
-base = read.transactions(file.choose(),header = F, sep=",", rm.duplicates = T)
+base = read.transactions('/home/junior/venvs/OMOP_ETL/Utils/Codigos/new.csv',header = F, sep=",", rm.duplicates = T)
 summary(base)
 
 
@@ -28,7 +28,7 @@ dotchart(itens[1:10], cex = 0.8)
 itemFrequencyPlot(base, topN=10)
 
 ##Encontrando as regras de associacao com o algortimo Aprori
-regras <- apriori(base, parameter  =list(support=0.001, confidence=0.5, minlen=2))
+regras <- apriori(base, parameter  =list(support=0.002, confidence=0.5, minlen=2))
 
 #inspecionando as regras 
 summary(regras)
