@@ -1,5 +1,4 @@
 setwd("teste")
-
 if(!"arules" %in% installed.packages()[,1]){
   install.packages("arules", lib = "./src_lib", dependencies = TRUE)
 }
@@ -12,7 +11,7 @@ library(arulesViz, lib.loc = c(.libPaths(), "./src_lib"))
 
 
 
-base = read.transactions('/home/junior/venvs/OMOP_ETL/Utils/Codigos/new.csv',header = F, sep=",", rm.duplicates = T)
+base = read.transactions('/home/junior/venvs/OMOP_ETL/Utils/Codigos/com_target.csv',header = F, sep=",", rm.duplicates = T)
 
 summary(base)
 
@@ -55,14 +54,14 @@ plot(regras, method = 'two-key plot', interactive=T, shading=NA)
 
 
 #Fazendo o gráfico do lift pelo suporte
-plot(regras, method="matrix", shading=c("lift", "confidence"))
+plot(regras, measure-C("support","lift"), shading="confidence")
 
 #Obtendo um conjunto menor de regras
 subregras <- regras[quality(regras)$confidence >0.8]
 
 #Fazendo os gráficos de matrizes
-plot(subregras, method="matrix")
-plot(subregras, method="matrix", engine = "3d")
+plot(subregras, method = 'matrix', interactive= TRUE, shading=NA)
+plot(regras, method = 'matrix3D', interactive= TRUE, shading=NA)
 
 #Agora mudando a ordem
 plot(regras, method="grouped", control = list(k=50),cex=0.8)
@@ -70,6 +69,6 @@ plot(regras, method="grouped", control = list(k=50),cex=0.8)
 
 #Plotando regras como grafos
 subregras2 <- head(sort(regras, by ="lift"),10)
-pdf(file= "grafos1.pdf")
+pdf(file - "grafos.pdf")
 plot(subregras2, method="graph", control=list(tyoe="itemsets"))
 
