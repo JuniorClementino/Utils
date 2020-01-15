@@ -1,0 +1,6 @@
+Nome ,Sexo,Febre,Dor,Procedimento
+Jose_Maria,Masculino,Forte,Sim,Realizado
+Eduarda,Feminina ,Fraca,Não,Nao realizado
+Felipe,Não_definido,Sem_sintomas,Não,Indefinido
+Tiao,Masculino,Sem_sintomas,Talvez,Realizado
+Josefa,Feminina ,Forte,Sim,Nao realizado
