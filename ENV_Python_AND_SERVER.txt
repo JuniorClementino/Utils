@@ -1,0 +1,29 @@
+--Criando um virtual env 
+virtualenv OmopEnvETL
+-- Ativando o ambiente 
+source OmopEnvETL/bin/activate
+
+-- Adicionando o ambiente ao Kernel do Jupyter  obs: dentro do ambiente
+pip install ipykernel
+python -m ipykernel install --user --name=OmopEnvETL
+
+-- versao especifica python 
+
+virtualenv --python=/usr/bin/python3 nome_pasta/nome_ambiente
+
+_______________________________________________________________________________________
+
+AND   Conect sever and run  a jupyter lab into local host 
+
+1-In server
+	- jupyter lab --no-browser --port= 9999
+
+2 - In Local Host
+	- ssh -N -f -L localhost:9999:localhost:9999 oscar@143.107.180.175
+
+
+3- In Web Browser Local Host
+  -Colar o end de local host na máquina Local
+
+
+
