@@ -1,15 +1,16 @@
 --Criando um virtual env 
-virtualenv OmopEnvETL
+virtualenv --python=/usr/bin/python3 nome_pasta/nome_ambiente
 -- Ativando o ambiente 
 source OmopEnvETL/bin/activate
 
+
+
+--------------------------------------------------------------------------------------------
 -- Adicionando o ambiente ao Kernel do Jupyter  obs: dentro do ambiente
-pip install ipykernel
-python -m ipykernel install --user --name=OmopEnvETL
+		-pip install ipykernel
+		-python -m ipykernel install --user --name=OmopEnvETL
+---------------------------------------------------------------------------------------------
 
--- versao especifica python 
-
-virtualenv --python=/usr/bin/python3 nome_pasta/nome_ambiente
 
 _______________________________________________________________________________________
 
