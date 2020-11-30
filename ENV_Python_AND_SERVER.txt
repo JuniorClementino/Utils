@@ -26,5 +26,5 @@ AND   Conect sever and run  a jupyter lab into local host
 3- In Web Browser Local Host
   -Colar o end de local host na máquina Local
 
-
+TV- 670082892
 
