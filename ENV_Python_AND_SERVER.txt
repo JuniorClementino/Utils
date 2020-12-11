@@ -28,3 +28,25 @@ AND   Conect sever and run  a jupyter lab into local host
 
 TV- 670082892
 
+
+
+
+
+
+
+------------------------
+Localização do arquivo em um local remoto
+Vamos copiar um arquivo local scp.zip chamado para o usuário de uma máquina remota raiz, O nome do usuário é seguido pelo endereço IP do servidor.
+
+exemplo:
+
+scp /users/Edward/desktop/scp.zip root@191.162.0.2: / Write / Article
+
+
+
+
+Arquivo remoto para um computador local
+Nesse processo, a origem e o destino do comando são reservados. Então, isso deve estar relacionado à sua sintaxe. Desta vez tentamos copiar scp.zip do mesmo host remoto para a nossa máquina local.
+
+scp root@191.162.0.2: /writing/articles/SCP.zip User / Edward / Desktop
+-----------------------------------------------------
