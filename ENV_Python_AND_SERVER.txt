@@ -1,4 +1,7 @@
 --Criando um virtual env 
+
+python3 -m venv myenv
+or 
 virtualenv --python=/usr/bin/python3 nome_pasta/nome_ambiente
 -- Ativando o ambiente 
 source OmopEnvETL/bin/activate
